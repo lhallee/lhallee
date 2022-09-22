@@ -5,7 +5,7 @@ My research interests hover around computational biology. I'm currently applying
 - 🌱 I’m currently learning - 
 Applications of attention and broad ML proficiency. 
 - 📫 How to reach me - 
-If you have questions about my code or would like to collaborate feel free to reach out to lhallee@udel.edu
+If you have questions about my code or would like to collaborate feel free to reach out to lhallee@udel.edu.
 
 <!---
 lhallee/lhallee is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
