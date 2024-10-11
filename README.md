@@ -11,7 +11,7 @@ I created the [Annotation Vocabulary](https://www.biorxiv.org/content/10.1101/20
 
 My work also supports the paradigm of codon usage bias as a key biological phenomenon for phylogenetic analysis. Our models, published in [Nature Scientific Reports](https://www.nature.com/articles/s41598-023-28965-7), highlight codon usage as a unique phylogenetic predictor. Our lab recently produced [cdsBERT](https://huggingface.co/GleghornLab/cdsBERT), showcasing cost-effective techniques to enhance the biological relevance of protein language models using a codon vocabulary.
 
-In natural language processing, I invented a [Mixture of Experts extension](https://arxiv.org/abs/2401.15713) for scalable transformer networks adept at sentence similarity tasks. We believe future networks with N experts will perform like N independently trained networks, offering significant time and computational savings for vector retrieval systems and search relying on semantic vector representations.
+In natural language processing, I invented [Mixture of Experts extension](https://arxiv.org/abs/2401.15713) for scalable transformer networks adept at sentence similarity tasks. We believe future networks with N experts will perform like N independently trained networks, offering significant time and computational savings for vector retrieval systems and search relying on semantic vector representations.
 
 I also manage lab projects in computer vision, utilizing deep learning to reconstruct anatomically accurate 3D organs from 2D Z-stacks, informing morphometric and pharmacokinetic studies.
 
