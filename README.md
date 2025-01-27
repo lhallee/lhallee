@@ -21,6 +21,8 @@ Some other stuff I've worked on over the years:
 
 Norway, ME ➔ Newark, DE
 
+![](https://komarev.com/ghpvc/?username=lhallee)
+
 <!---
 lhallee/lhallee is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
