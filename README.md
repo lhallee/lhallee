@@ -10,15 +10,23 @@ My name is Logan Hallee, a scientist working on computational protein modeling t
 
 ## Research Highlights
 
-### SYNTERACT
-- [**SYNTERACT**](https://huggingface.co/GleghornLab/SYNTERACT) is a large language model for protein–protein interaction prediction.
-- First LLM approach to PPI.
-- Ranks in the [**top 3% of research outputs**](https://www.biorxiv.org/content/10.1101/2023.06.07.544109v1.article-metrics) by Altmetric.  
+### Protein-Protein Interaction Prediction (PPI)
+- I've worked on a series of models I named Synteract, which have made various contributions to the field of PPI
+- Synteract-1 was the first large language model approach for PPI prediction [**SYNTERACT**](https://huggingface.co/GleghornLab/SYNTERACT). Its preprint still ranks in the [**top 3% of research outputs**](https://www.biorxiv.org/content/10.1101/2023.06.07.544109v1.article-metrics) by Altmetric
+- Synteract-2 was jointly optimized system that predicted PPI, protein-protein binding affinity, and binding site locaations and was Synthyra's first product. At the time of release it was the best binding affinity predictor via the Affinity v5.5 and Haddock benchmarks.
+<img width="5400" height="3600" alt="image" src="https://github.com/user-attachments/assets/b40244e1-7eea-40db-a8f6-5c1c2d3fa7a2" />
+- The signal of Synteract-2 was used to optimize the binding affinity of the commercial cancer treatment Cetuximab to have pM binding affinity, which has a projected **$100 billion dollar** market cap. At the time of release our Cetuximab variants had 90% higher binding affinity to their target (EGFR) va. the nearest commercial option, and 30% over the nearest external designed variant.
+- I address key confounders in PPI data compliation, including the accidental localist and accidental taxonomist phenomena when training from pLM or adjacent embeddings.
+- Synteract-3 was an internal model that had a similar workflow to Synteract-2 but with exceedingly high throughput, allowing for full interactome predictions.
+- Synteract-4 is Synthyra's current premier product, offering a 10% increase in performance on standardized gold-standard benchmarks compared to the entire field. 
+<img width="7200" height="4800" alt="bernett" src="https://github.com/user-attachments/assets/8946cfa9-faf3-43f3-ac0d-b77bed025e5b" />
 
 ### Tetris For Proteins
 - Collaborated with **Stephen Wolfram** & other mentors at the Wolfram Winter School.  
 - Developed “[Tetris For Proteins](https://community.wolfram.com/groups/-/m/t/2777595)” – a shape-based metric emulating lock-and-key enzyme-substrate interactions.  
 - Generates hypotheses on protein aggregation likelihood.
+<img width="775" height="329" alt="image" src="https://github.com/user-attachments/assets/61ebaf0e-3b3d-405f-93ad-0b628ba4945f" />
+<img width="873" height="772" alt="image" src="https://github.com/user-attachments/assets/977107b2-1ed6-457f-9dbf-f76a4db3d195" />
 
 ### Annotation Vocabulary
 - Invented the [**Annotation Vocabulary**](https://www.biorxiv.org/content/10.1101/2024.07.30.605924v1.abstract), a unique set of integers mapped to popular protein and gene ontologies.  
