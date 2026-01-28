@@ -11,36 +11,74 @@ My name is Logan Hallee, a scientist working on computational protein modeling t
 ## Research Highlights
 
 ### Protein-Protein Interaction Prediction (PPI)
-- I've worked on a series of models I named Synteract, which have made various contributions to the field of PPI
-- Synteract-1 was the first large language model approach for PPI prediction [**SYNTERACT**](https://huggingface.co/GleghornLab/SYNTERACT). Its preprint still ranks in the [**top 3% of research outputs**](https://www.biorxiv.org/content/10.1101/2023.06.07.544109v1.article-metrics) by Altmetric
-- Synteract-2 was jointly optimized system that predicted PPI, protein-protein binding affinity, and binding site locaations and was Synthyra's first product. At the time of release it was the best binding affinity predictor via the Affinity v5.5 and Haddock benchmarks.
-<img width="5400" height="3600" alt="image" src="https://github.com/user-attachments/assets/b40244e1-7eea-40db-a8f6-5c1c2d3fa7a2" />
-- The signal of Synteract-2 was used to optimize the binding affinity of the commercial cancer treatment Cetuximab to have pM binding affinity, which has a projected **$100 billion dollar** market cap. At the time of release our Cetuximab variants had 90% higher binding affinity to their target (EGFR) va. the nearest commercial option, and 30% over the nearest external designed variant.
-- I address key confounders in PPI data compliation, including the accidental localist and accidental taxonomist phenomena when training from pLM or adjacent embeddings.
+- I've worked on a series of models named Synteract, which have made various contributions to the field of PPI.
+- Synteract-1 was the first large language model approach for PPI prediction [**SYNTERACT**](https://huggingface.co/GleghornLab/SYNTERACT).
+  - Its preprint still ranks in the [**top 3% of research outputs**](https://www.biorxiv.org/content/10.1101/2023.06.07.544109v1.article-metrics) by Altmetric.
+  - We made progress showcasing how different negative sampling strategies can negatively effect performance (accidental localizers).
+- Synteract-2 was a jointly optimized system that predicted PPI, protein-protein binding affinity, and binding site locaations and was Synthyra's first product. At the time of release it was the best binding affinity predictor via the Affinity v5.5 and Haddock benchmarks.
+<img width="5400" height="3600" alt="pkd_correlation" src="https://github.com/user-attachments/assets/ab5dff22-835c-4cc1-be07-85135a71ef0d" />
+
+- I addressed key confounders in PPI data compliation, most recently the [accidental taxonomist](https://www.biorxiv.org/content/10.1101/2025.10.07.681002v1) phenomena when training from pLM or adjacent embeddings.
+  - In review at BMC Bioinformatics
 - Synteract-3 was an internal model that had a similar workflow to Synteract-2 but with exceedingly high throughput, allowing for full interactome predictions.
 - Synteract-4 is Synthyra's current premier product, offering a 10% increase in performance on standardized gold-standard benchmarks compared to the entire field. 
 <img width="7200" height="4800" alt="bernett" src="https://github.com/user-attachments/assets/8946cfa9-faf3-43f3-ac0d-b77bed025e5b" />
+
+We leveraged the signal of Synteract-2 binding affinity predictions with our generative model DSM
+- DSM is the first protein language model (pLM) trained on the LLaDa masked diffusion process, enabling easy extension to pretrained pLMs to turn them into generative models.
+<img width="856" height="1692" alt="dsm_architecture" src="https://github.com/user-attachments/assets/23b6611d-6288-4c9d-8c78-cb2686306ed2" />
+
+- They maintained they representation quality while outputing high quality proteins
+- DSM + Synteract2 was used to increase the binding affinity of the commercial cancer treatment Cetuximab, which has a projected **$7 billion** market cap. At the time of release our [Cetuximab variants had 90% higher binding affinity to their target](https://github.com/Gleghorn-Lab/DSM) (EGFR) vs. the commercial option, and 30% over the nearest external designed variant.
+<table>
+  <tr>
+    <td>
+      <img width="596" height="355" alt="image" src="https://github.com/user-attachments/assets/0c6f690d-3134-44d2-9540-12c277e187b3" />
+    </td>
+    <td>
+      <img src="https://github.com/Gleghorn-Lab/DSM/blob/main/wetlab_result_analysis/egfr/kinetics/dsm_egfr_10_2.png" width="400">
+    </td>
+  </tr>
+</table>
 
 ### Tetris For Proteins
 - Collaborated with **Stephen Wolfram** & other mentors at the Wolfram Winter School.  
 - Developed “[Tetris For Proteins](https://community.wolfram.com/groups/-/m/t/2777595)” – a shape-based metric emulating lock-and-key enzyme-substrate interactions.  
 - Generates hypotheses on protein aggregation likelihood.
-<img width="775" height="329" alt="image" src="https://github.com/user-attachments/assets/61ebaf0e-3b3d-405f-93ad-0b628ba4945f" />
-<img width="873" height="772" alt="image" src="https://github.com/user-attachments/assets/977107b2-1ed6-457f-9dbf-f76a4db3d195" />
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/61ebaf0e-3b3d-405f-93ad-0b628ba4945f" width="400" alt="image" />
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/977107b2-1ed6-457f-9dbf-f76a4db3d195" width="400" alt="image" />
+    </td>
+  </tr>
+</table>
+
+### Protify
+
+### SpeedrunningPLMs
+
+### FastPLMs
 
 ### Annotation Vocabulary
 - Invented the [**Annotation Vocabulary**](https://www.biorxiv.org/content/10.1101/2024.07.30.605924v1.abstract), a unique set of integers mapped to popular protein and gene ontologies.  
 - Enables state-of-the-art protein annotation and generation models when paired with its own token embedding.
+<img width="1396" height="355" alt="image" src="https://github.com/user-attachments/assets/9dc3aafb-23ab-4796-baf7-349c976c62e4" />
 
 ### Codon Usage Bias
 - Codon usage bias is highlighted as a key biological phenomenon and valuable feature for machine learning in [Nature Scientific Reports](https://www.nature.com/articles/s41598-023-28965-7).  
-- Our models show codon usage with a powerful phylogenetic association  
-- Introduced [**cdsBERT**](https://huggingface.co/GleghornLab/cdsBERT), showcasing cost-effective ways to enhance biological relevance in protein language models via a codon vocabulary.
+  - Our models show codon usage with a powerful phylogenetic association.
+  - Introduced [**cdsBERT**](https://huggingface.co/GleghornLab/cdsBERT), showcasing cost-effective ways to enhance biological relevance in protein language models via a codon vocabulary.
+<img width="14400" height="4800" alt="pca_combined_cds_simple" src="https://github.com/user-attachments/assets/14fb09ba-e63f-486e-b943-07d5f86b991e" />
 
 ### Mixture of Experts Extension
 - Invented a [Mixture of Experts extension](https://arxiv.org/abs/2401.15713) for scalable transformer networks adept at sentence similarity tasks.  
-- Future networks with N experts could perform like N independently trained networks, offering significant time and computational savings in semantic retrieval systems.
-- In review.
+  - Future networks with N experts could perform like N independently trained networks, offering significant time and computational savings in semantic retrieval systems.
+  - Published in [Nature Scientific Reports](https://www.nature.com/articles/s41598-025-98185-8)
+<img width="944" height="695" alt="image" src="https://github.com/user-attachments/assets/faeb88a4-441c-4db8-9cd5-53246b66b4d0" />
+
 
 ### Computer Vision in Biology
 - Collaborates on lab projects involving deep learning for reconstructing 3D organs from 2D Z-stacks.  
