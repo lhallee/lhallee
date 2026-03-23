@@ -6,7 +6,7 @@
 
 My name is Logan Hallee. I’m a scientist working on computational protein modeling through the lens of machine learning. I’m the Chief Scientific Officer and Founder of Synthyra, a Public Benefit LLC that operates as a research organization and CRO for protein science. I’m also a PhD Candidate in Bioinformatics at the University of Delaware in the [Gleghorn Lab](https://www.gleghornlab.com/), where my research focuses on protein modeling with transformer neural networks. On the side, I write [Minds and Molecules](https://medium.com/minds-and-molecules), a blog exploring the philosophy behind science and computation.
 
-I’m motivated by safe computational systems that help us better understand the universe at every level of abstraction. However, mostly work towards progress of high-fidelity modeling of the protein universe - efforts that help turn biochemistry into a programmable medium. I believe true biochemical mastery can unlock organic carbon capture, improved crops, efficient circular economies, and major advances in medicine.
+I’m motivated by safe computational systems that help us better understand the universe at every level of abstraction. However, I mostly work towards progress of high-fidelity modeling of the protein universe - efforts that help turn biochemistry into a programmable medium. I believe true biochemical mastery can unlock organic carbon capture, improved crops, efficient circular economies, and major advances in medicine.
 
 ### You can find my CV [here](https://docs.google.com/document/d/1q4mQotGm7MyU-TLmf_x17bRxalCy_Fcz/edit?usp=sharing&ouid=110410923518282620159&rtpof=true&sd=true)
 
